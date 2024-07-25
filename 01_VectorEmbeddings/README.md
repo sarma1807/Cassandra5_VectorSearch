@@ -15,3 +15,15 @@ Here are some key points about Vector Embeddings: <br><br>
 `Recommender Systems` : Item embeddings can help in recommending similar items to users based on their preferences. <br>
 `Computer Vision` : Image embeddings can be used to recognize and categorize objects in images. <br>
 `Search & Retrieval` : Embeddings can improve the performance of search engines by finding semantically similar documents or images. <br><br>
+
+5. `Models & Techniques` : <br>
+`Word Embeddings` : Word2Vec, GloVe, FastText <br>
+`Sentence/Document Embeddings` : Doc2Vec, Sentence-BERT <br>
+`Image Embeddings` : Convolutional Neural Networks (CNNs) <br>
+`Graph Embeddings` : Node2Vec, Graph Convolutional Networks (GCNs) <br><br>
+
+6. `Transfer Learning` : Pre-trained embeddings can be fine-tuned on specific tasks or datasets, allowing for better performance with less training data. <br><br>
+
+In summary, vector embeddings transform complex data into continuous vector spaces, enabling efficient computation and the discovery of underlying patterns and relationships. <br>
+
+---
