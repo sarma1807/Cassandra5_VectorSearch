@@ -8,9 +8,11 @@
 
 https://pypi.org/project/pillow/
 
-``` pip install pillow ```
+```
+pip install pillow
 
-``` pip show pillow ```
+pip show pillow
+```
 
 ```
 $ pip show pillow
@@ -28,4 +30,3 @@ $
 ```
 
 ---
-
