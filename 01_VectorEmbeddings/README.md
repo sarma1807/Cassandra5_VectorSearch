@@ -27,3 +27,13 @@ Here are some key points about Vector Embeddings: <br><br>
 In summary, vector embeddings transform complex data into continuous vector spaces, enabling efficient computation and the discovery of underlying patterns and relationships. <br>
 
 ---
+
+## Usage :
+
+`01_python_pip_packages.md` : install required python packages using pip <br><br>
+`text2vector.py` : python code to convert text to a vector embedding <br><br>
+`image2vector.py` : python code to convert image to a vector embedding <br><br>
+`sample_image.jpg` : sample image used by `image2vector.py` <br>
+
+---
+
