@@ -4,7 +4,7 @@
 
 # Pillow (PIL)
 
-### Python Imaging Library adds image processing capabilities to your Python code
+#### Python Imaging Library adds image processing capabilities to your Python code
 
 https://pypi.org/project/pillow/
 
@@ -29,7 +29,7 @@ $
 
 # numpy
 
-### The fundamental package for scientific computing with Python
+#### The fundamental package for scientific computing with Python
 
 https://numpy.org/
 
@@ -55,7 +55,7 @@ $
 
 # pandas
 
-### pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
+#### pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
 
 https://pandas.pydata.org/
 
@@ -81,7 +81,7 @@ $
 
 # opencv-python
 
-### a Python library that provides tools for computer vision and image processing using the OpenCV (Open Source Computer Vision) library.
+#### a Python library that provides tools for computer vision and image processing using the OpenCV (Open Source Computer Vision) library.
 
 https://pypi.org/project/opencv-python/
 
@@ -106,7 +106,7 @@ $
 
 # sentence-transformers
 
-### Sentence Transformers: Multilingual Sentence, Paragraph, and Image Embeddings using BERT & Co.
+#### Sentence Transformers: Multilingual Sentence, Paragraph, and Image Embeddings using BERT & Co.
 
 https://pypi.org/project/sentence-transformers/
 
@@ -132,7 +132,7 @@ $
 
 # tornado
 
-### Tornado is a Python web framework and asynchronous networking library
+#### Tornado is a Python web framework and asynchronous networking library
 
 https://pypi.org/project/tornado/
 
