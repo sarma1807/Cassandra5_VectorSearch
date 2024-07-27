@@ -4,7 +4,7 @@
 
 # Pillow (PIL)
 
-#### Python Imaging Library adds image processing capabilities to your Python code
+#### Python Imaging Library adds image processing capabilities to Python code
 
 https://pypi.org/project/pillow/
 
