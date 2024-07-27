@@ -22,13 +22,14 @@ vector_embedding1 = model.encode(myText1)
 vector_embedding2 = model.encode(myText2)
 
 # vector embedding is an array of float values
-print(type(vector_embedding1))
+print("type of vector embedding : " + str(type(vector_embedding1)))
 ### output : <class 'numpy.ndarray'>
 
 # vector embedding is an array of 384 float values
-print(vector_embedding1.shape)
+print("shape/size of vector embedding : " + str(vector_embedding1.shape))
 ### output : (384,)
 
+print("vector embedding :")
 print(vector_embedding1)
 
 
@@ -39,10 +40,12 @@ similarity2 = model.similarity(vector_embedding1, vector_embedding1)
 
 
 # 33% similar
+print("vector embedding comparision 1 :")
 print(similarity1)
 ### output : tensor([[0.3320]])
 
 # 100% similar
+print("vector embedding comparision 2 :")
 print(similarity2)
 ### output : tensor([[1.0000]])
 
