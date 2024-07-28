@@ -16,6 +16,8 @@ CREATE TABLE movies.my_movies (
 -- Storage-attached Index (SAI) is required on vector column to perform vector search
 CREATE INDEX my_movies_plot_ann_index ON movies.my_movies(plot_vector) USING 'sai' ;
 
+DESCRIBE TABLE movies.my_movies ;
+
 ------------------
 -- additionally :
 -- WITH OPTIONS = { 'similarity_function': 'DOT_PRODUCT' } ;
