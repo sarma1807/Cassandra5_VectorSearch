@@ -15,6 +15,7 @@ from cassandra.query   import SimpleStatement
 from cassandra         import ConsistencyLevel
 
 ### variables
+WEB_IMGS_FOLDER_ABS_PATH = "~"
 WEB_IMGS_FOLDER = "carImgs"
 WEB_PORT = "8080"
 
@@ -104,7 +105,7 @@ if __name__ == "__main__":
     (r"/", basicRequestHandler),
     (r"/form", formRequestHandler),
     (r"/formClicked", formClickedRequestHandler),
-    (r"/" + WEB_IMGS_FOLDER + "/(.*)", tornado.web.StaticFileHandler, {"path": "/apps/opt/cassandra/cars/carImgs"})
+    (r"/" + WEB_IMGS_FOLDER + "/(.*)", tornado.web.StaticFileHandler, {"path": WEB_IMGS_FOLDER_ABS_PATH})
   ])
   
   app.listen(WEB_PORT)
