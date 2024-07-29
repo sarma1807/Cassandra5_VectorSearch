@@ -1,4 +1,4 @@
-## movies
+## movies (text search)
 
 #### this project can be used to demonstrate the ANN Vector Search in Cassandra 5.0-rc1 and above
 
