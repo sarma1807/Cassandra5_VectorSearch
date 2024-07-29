@@ -16,7 +16,10 @@ https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset <br> <br>
 
 original movies_metadata.csv file is the main Movies Metadata file, which contains information on 45,000 movies featured in the Full MovieLens dataset, contains around 24 columns. <br> <br>
 
-` my_movies.csv ` contains only 5 columns. <br>
+` my_movies.csv ` contains 5 columns and 43,687 rows. <br> <br>
 id,imdb_id,title,release_year,plot_overview <br>
+
+- removed explicit content
+- removed special characters
 
 ---
