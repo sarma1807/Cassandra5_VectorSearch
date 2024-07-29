@@ -1,0 +1,8 @@
+$ cd ./Cassandra5_VectorSearch/03_cars
+$ date ; python 02_load_vectors_into_db.py ; date ;
+Mon Jul 29 02:40:15 PM EDT 2024
+vector embeddings for car images loaded into database.
+Done.
+Mon Jul 29 03:36:05 PM EDT 2024
+$
+
