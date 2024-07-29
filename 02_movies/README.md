@@ -34,7 +34,7 @@ id,imdb_id,title,release_year,plot_overview <br>
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/movies
+cd ./Cassandra5_VectorSearch/02_movies
 
 cqlsh --file 01_cassandra_tables.cql
 ```
@@ -49,7 +49,7 @@ NOTE : this code does NOT create vector embeddings.
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/movies
+cd ./Cassandra5_VectorSearch/02_movies
 
 python 02_load_my_movies_into_db.py
 ```
@@ -63,7 +63,7 @@ python code to read each row from ` my_movies.csv ` and creates vector embedding
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/movies
+cd ./Cassandra5_VectorSearch/02_movies
 
 python 03_load_vectors_into_db.py
 ```
@@ -77,7 +77,7 @@ python web application to expose Cassandra data and also perform vector search b
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/movies
+cd ./Cassandra5_VectorSearch/02_movies
 
 python 04_moviesWebBrowser.py
 ```
