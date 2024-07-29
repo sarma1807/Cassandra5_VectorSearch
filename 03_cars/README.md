@@ -39,4 +39,17 @@ unzip -j 06001_08000.zip -d .
 unzip -j 08001_09999.zip -d .
 ```
 
+##### if everything goes well, then we should get 10,000 JPG files in ` Cassandra5_VectorSearch / 03_cars / carImgs ` folder.
+
+```
+$ pwd
+/apps/opt/cassandra/Cassandra5_VectorSearch/03_cars/carImgs
+
+$ ls -lh *.jpg | wc -l
+10000
+$
+```
+
+## we are now ready to use this dataset
+
 ---
