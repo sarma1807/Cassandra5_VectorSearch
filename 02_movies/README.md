@@ -82,6 +82,12 @@ cd ./Cassandra5_VectorSearch/02_movies
 python 04_moviesWebBrowser.py
 ```
 
+##### web application URL :
+
+```
+http://localhost:8080
+```
+
 ` screenshots ` folder contains few example screens.
 
 ---
