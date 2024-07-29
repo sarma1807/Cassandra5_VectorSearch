@@ -31,6 +31,13 @@ id,imdb_id,title,release_year,plot_overview <br>
 - my_movies table contains a column with ` vector ` datatype (new in Cassandra 5.0-rc1 and above)
 - create a Storage-attached Index (SAI) : required on vector column to perform vector search
 
+##### execute after git clone :
+
+```
+cd ./Cassandra5_VectorSearch/movies
+
+cqlsh --file 01_cassandra_tables.cql
+```
 ---
 
 ### 02_load_my_movies_into_db.py
@@ -39,11 +46,27 @@ python code to read each row from ` my_movies.csv ` and load it into Cassandra t
 
 NOTE : this code does NOT create vector embeddings.
 
+##### execute after git clone :
+
+```
+cd ./Cassandra5_VectorSearch/movies
+
+python 02_load_my_movies_into_db.py
+```
+
 ---
 
 ### 03_load_vectors_into_db.py
 
 python code to read each row from ` my_movies.csv ` and creates vector embedding for ` plot_overview ` column, then saves the vector embeddings into Cassandra table.
+
+##### execute after git clone :
+
+```
+cd ./Cassandra5_VectorSearch/movies
+
+python 03_load_vectors_into_db.py
+```
 
 ---
 
@@ -51,6 +74,15 @@ python code to read each row from ` my_movies.csv ` and creates vector embedding
 
 python web application to expose Cassandra data and also perform vector search based on user input. <br> <br>
 
+##### execute after git clone :
+
+```
+cd ./Cassandra5_VectorSearch/movies
+
+python 04_moviesWebBrowser.py
+```
+
 ` screenshots ` folder contains few example screens.
 
 ---
+
