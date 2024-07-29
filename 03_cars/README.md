@@ -95,7 +95,9 @@ cd ./Cassandra5_VectorSearch/03_cars/carImgs
 
 sed -i "s|~|$PWD|g" ../03_carsWebBrowser.py
 
-python ../03_carsWebBrowser.py
+cd ..
+
+python 03_carsWebBrowser.py
 ```
 
 ` screenshots ` folder contains few example screens.
