@@ -84,16 +84,16 @@ python 02_load_vectors_into_db.py
 
 ---
 
-### 04_moviesWebBrowser.py
+### 03_carsWebBrowser.py
 
 python web application to expose Cassandra data and also perform vector search based on user input. <br> <br>
 
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/movies
+cd ./Cassandra5_VectorSearch/03_cars
 
-python 04_moviesWebBrowser.py
+python 03_carsWebBrowser.py
 ```
 
 ` screenshots ` folder contains few example screens.
