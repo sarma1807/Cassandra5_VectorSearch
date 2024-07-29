@@ -1,9 +1,0 @@
-$ date ; python 02_load_my_movies_into_db.py ; date ;
-Sun Jul 28 11:34:50 AM EDT 2024
-most likely this row has bad data : id = 82663 : invalid literal for int() with base 10: '1997-08-20'
-most likely this row has bad data : id = 122662 : invalid literal for int() with base 10: '2012-09-29'
-most likely this row has bad data : id = 249260 : invalid literal for int() with base 10: '2014-01-01'
-movies data loaded into database.
-Done.
-Sun Jul 28 11:35:38 AM EDT 2024
-$
