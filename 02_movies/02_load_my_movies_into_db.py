@@ -10,7 +10,7 @@ from cassandra.auth    import PlainTextAuthProvider
 from cassandra.query   import SimpleStatement
 from cassandra         import ConsistencyLevel
 
-### connection variables for on-prem Cassandra 5.0-rc1 or above
+### connection variables for Cassandra 5.0-rc1 or above
 ### multiple CASS_CONTACT_POINTS can be specified using comma separated strings
 CASS_CONTACT_POINTS    = ["192.168.1.177"]
 CASS_PORT              = 9042

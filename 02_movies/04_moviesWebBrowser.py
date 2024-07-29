@@ -14,7 +14,7 @@ from cassandra         import ConsistencyLevel
 ### web application settings
 WEB_PORT = "8080"
 
-### connection variables for on-prem Cassandra 5.0-rc1 or above
+### connection variables for Cassandra 5.0-rc1 or above
 ### multiple CASS_CONTACT_POINTS can be specified using comma separated strings
 CASS_CONTACT_POINTS    = ["192.168.1.177"]
 CASS_PORT              = 9042
