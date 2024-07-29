@@ -23,3 +23,34 @@ id,imdb_id,title,release_year,plot_overview <br>
 - removed special characters
 
 ---
+
+### 01_cassandra_tables.cql
+
+- create a new keyspace in Cassandra
+- create a table for movies data
+- my_movies table contains a column with ` vector ` datatype (new in Cassandra 5.0-rc1 and above)
+- create a Storage-attached Index (SAI) : required on vector column to perform vector search
+
+---
+
+### 02_load_my_movies_into_db.py
+
+python code to read each row from ` my_movies.csv ` and load it into Cassandra table. <br> <br>
+
+NOTE : this code does NOT create vector embeddings.
+
+---
+
+### 03_load_vectors_into_db.py
+
+python code to read each row from ` my_movies.csv ` and creates vector embedding for ` plot_overview ` column, then saves the vector embeddings into Cassandra table.
+
+---
+
+### 04_moviesWebBrowser.py
+
+python web application to expose Cassandra data and also perform vector search based on user input. <br> <br>
+
+` screenshots ` folder contains few example screens.
+
+---
