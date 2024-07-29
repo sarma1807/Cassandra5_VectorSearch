@@ -1,4 +1,4 @@
-## movies (text search)
+## cars (image search)
 
 #### this project can be used to demonstrate the ANN Vector Search in Cassandra 5.0-rc1 and above
 
@@ -9,32 +9,62 @@ The scaling is superior to Exact Nearest Neighbor (KNN).
 
 ---
 
-### my_movies.csv
+### DVM-CAR dataset
 
-this is a partial dataset extracted from "the-movies-dataset" on kaggle. <br>
-https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset <br> <br>
+https://deepvisualmarketing.github.io/
 
-original movies_metadata.csv file is the main Movies Metadata file, which contains information on 45,000 movies featured in the Full MovieLens dataset, contains around 24 columns. <br> <br>
+this is a partial dataset extracted from "Quality checked front-view images" from DVM-CAR. <br> <br>
 
-` my_movies.csv ` contains 5 columns and 43,687 rows. <br> <br>
-id,imdb_id,title,release_year,plot_overview <br>
+` Cassandra5_VectorSearch / 03_cars / carImgs ` folder contains 5 zip files. This compressed dataset contains 10,000 front-view images of various cars.
 
-- removed explicit content
-- removed special characters
+```
+00000_02000.zip
+02001_04000.zip
+04001_06000.zip
+06001_08000.zip
+08001_09999.zip
+```
+
+## prepare the dataset
+
+##### after git clone :
+
+```
+cd ./Cassandra5_VectorSearch/03_cars/carImgs
+
+unzip -j 00000_02000.zip -d .
+unzip -j 02001_04000.zip -d .
+unzip -j 04001_06000.zip -d .
+unzip -j 06001_08000.zip -d .
+unzip -j 08001_09999.zip -d .
+```
+
+##### if everything goes well, then we should get 10,000 JPG files in ` Cassandra5_VectorSearch / 03_cars / carImgs ` folder.
+
+```
+$ pwd
+/apps/opt/cassandra/Cassandra5_VectorSearch/03_cars/carImgs
+
+$ ls -lh *.jpg | wc -l
+10000
+$
+```
+
+## we are now ready to use this dataset
 
 ---
 
 ### 01_cassandra_tables.cql
 
 - create a new keyspace in Cassandra
-- create a table for movies data
-- my_movies table contains a column with ` vector ` datatype (new in Cassandra 5.0-rc1 and above)
+- create a table for cars data
+- my_cars table contains a column with ` vector ` datatype (new in Cassandra 5.0-rc1 and above)
 - create a Storage-attached Index (SAI) : required on vector column to perform vector search
 
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/02_movies
+cd ./Cassandra5_VectorSearch/03_cars
 
 cqlsh --file 01_cassandra_tables.cql
 ```
@@ -49,7 +79,7 @@ NOTE : this code does NOT create vector embeddings.
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/02_movies
+cd ./Cassandra5_VectorSearch/movies
 
 python 02_load_my_movies_into_db.py
 ```
@@ -63,7 +93,7 @@ python code to read each row from ` my_movies.csv ` and creates vector embedding
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/02_movies
+cd ./Cassandra5_VectorSearch/movies
 
 python 03_load_vectors_into_db.py
 ```
@@ -77,7 +107,7 @@ python web application to expose Cassandra data and also perform vector search b
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/02_movies
+cd ./Cassandra5_VectorSearch/movies
 
 python 04_moviesWebBrowser.py
 ```

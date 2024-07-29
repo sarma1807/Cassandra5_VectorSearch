@@ -1,22 +1,19 @@
 -- requires Apache Cassandra 5.0-rc1 or above
 
 -- create new keyspace
-CREATE KEYSPACE movies WITH replication = {'class': 'NetworkTopologyStrategy', 'east_dc': '3'} ;
+CREATE KEYSPACE cars WITH replication = {'class': 'NetworkTopologyStrategy', 'east_dc': '3'} ;
 
--- create a table for movies data
-CREATE TABLE movies.my_movies (
+-- create a table for cars data
+CREATE TABLE cars.my_cars (
   id                bigint PRIMARY KEY,
-  imdb_id           text,
-  title             text,
-  release_year      int,
-  plot_overview     text,
-  plot_vector       vector <float, 384>
+  car_image         text,
+  car_image_vector  vector <float, 512>
 ) ;
 
 -- Storage-attached Index (SAI) is required on vector column to perform vector search
-CREATE INDEX my_movies_plot_ann_index ON movies.my_movies(plot_vector) USING 'sai' ;
+CREATE INDEX my_cars_image_ann_index ON cars.my_cars(car_image_vector) USING 'sai' ;
 
-DESCRIBE TABLE movies.my_movies ;
+DESCRIBE TABLE cars.my_cars ;
 
 ------------------
 -- additionally :
@@ -25,7 +22,7 @@ DESCRIBE TABLE movies.my_movies ;
 ------------------
 
 ------------------
--- vector <float, 384> : vector of 384 float values (max 1000 elements)
+-- vector <float, 512> : vector of 512 float values (max 1000 elements)
 -- 
 -- vector feels/looks/works like a list datatype
 -- 
