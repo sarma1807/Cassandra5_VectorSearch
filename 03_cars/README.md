@@ -91,9 +91,11 @@ python web application to expose Cassandra data and also perform vector search b
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/03_cars
+cd ./Cassandra5_VectorSearch/03_cars/carImgs
 
-python 03_carsWebBrowser.py
+sed -i "s|~|$PWD|g" ../03_carsWebBrowser.py
+
+python ../03_carsWebBrowser.py
 ```
 
 ` screenshots ` folder contains few example screens.
