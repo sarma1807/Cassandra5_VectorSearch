@@ -1,4 +1,4 @@
-## cars (text search)
+## cars (image search)
 
 #### this project can be used to demonstrate the ANN Vector Search in Cassandra 5.0-rc1 and above
 
@@ -23,6 +23,20 @@ this is a partial dataset extracted from "Quality checked front-view images" fro
 04001_06000.zip
 06001_08000.zip
 08001_09999.zip
+```
+
+## prepare the dataset
+
+##### after git clone :
+
+```
+cd ./Cassandra5_VectorSearch/03_cars/carImgs
+
+unzip -j 00000_02000.zip -d .
+unzip -j 02001_04000.zip -d .
+unzip -j 04001_06000.zip -d .
+unzip -j 06001_08000.zip -d .
+unzip -j 08001_09999.zip -d .
 ```
 
 ---
