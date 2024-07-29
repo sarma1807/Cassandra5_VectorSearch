@@ -40,6 +40,7 @@ class basicRequestHandler(tornado.web.RequestHandler):
     vColumnCount = 0
     # self.write("<h3> 10 Movies Related To : " + search_string + " (search results using Cassandra 5.x ANN Vector Search) </h3> \n")
     self.write("<h3> Basic Grid of Car Images </h3> <br> \n")
+    self.write("<h2> <a href='./form'> Click here to perform Vector Search </a> </h2> <br> \n")
     self.write("<table border=0> <tr> \n")
     for vfile in random.sample(os.listdir(WEB_IMGS_FOLDER), 80):
       # check for filename ending with .jpg and it is a file and it is not zero bytes in size
