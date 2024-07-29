@@ -25,7 +25,7 @@ DESCRIBE TABLE movies.my_movies ;
 ------------------
 
 ------------------
--- vector <float, 512> : vector of 512 float values (max 1000 elements)
+-- vector <float, 384> : vector of 384 float values (max 1000 elements)
 -- 
 -- vector feels/looks/works like a list datatype
 -- 
