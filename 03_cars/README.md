@@ -70,32 +70,16 @@ cqlsh --file 01_cassandra_tables.cql
 ```
 ---
 
-### 02_load_my_movies_into_db.py
+### 02_load_vectors_into_db.py
 
-python code to read each row from ` my_movies.csv ` and load it into Cassandra table. <br> <br>
-
-NOTE : this code does NOT create vector embeddings.
+python code to read each image from ` carImgs ` folder and creates vector embedding for the image, then saves the vector embeddings into Cassandra table.
 
 ##### execute after git clone :
 
 ```
-cd ./Cassandra5_VectorSearch/movies
+cd ./Cassandra5_VectorSearch/03_cars
 
-python 02_load_my_movies_into_db.py
-```
-
----
-
-### 03_load_vectors_into_db.py
-
-python code to read each row from ` my_movies.csv ` and creates vector embedding for ` plot_overview ` column, then saves the vector embeddings into Cassandra table.
-
-##### execute after git clone :
-
-```
-cd ./Cassandra5_VectorSearch/movies
-
-python 03_load_vectors_into_db.py
+python 02_load_vectors_into_db.py
 ```
 
 ---
