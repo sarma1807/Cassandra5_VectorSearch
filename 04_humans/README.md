@@ -13,7 +13,7 @@ The scaling is superior to Exact Nearest Neighbor (KNN).
 
 https://www.kaggle.com/datasets/ashwingupta3012/human-faces/
 
-this is a partial dataset extracted from "Humans.zip" from DVM-CAR. <br> <br>
+this is a partial dataset extracted from "Humans.zip". <br> <br>
 
 ## NOTE : this is not a very clean dataset (it contains duplicates), but Vector Search results are pretty impressive
 
