@@ -2,9 +2,9 @@
 
 ##### Captured on 02-August-2024
 
-![20240724_05.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/03_cars/screenshots/20240724_05.jpg) <br><br>
-![20240724_06.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/03_cars/screenshots/20240724_06.jpg) <br><br>
-![20240724_07.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/03_cars/screenshots/20240724_07.jpg) <br><br>
-![20240724_08.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/03_cars/screenshots/20240724_08.jpg) <br><br>
-![20240724_09.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/03_cars/screenshots/20240724_09.jpg) <br><br>
+![20240802_01.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/04_humans/screenshots/20240802_01.jpg) <br><br>
+![20240802_02.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/04_humans/screenshots/20240802_02.jpg) <br><br>
+![20240802_03.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/04_humans/screenshots/20240802_03.jpg) <br><br>
+![20240802_04.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/04_humans/screenshots/20240802_04.jpg) <br><br>
+![20240802_05.jpg](https://github.com/sarma1807/Cassandra5_VectorSearch/blob/main/04_humans/screenshots/20240802_05.jpg) <br><br>
 
