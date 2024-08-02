@@ -91,11 +91,11 @@ python web application to expose Cassandra data and also perform vector search b
 ```
 cd ./Cassandra5_VectorSearch/04_humans/faceImgs
 
-sed -i "s|~|$PWD|g" ../03_humanFacesWebBrowser
+sed -i "s|~|$PWD|g" ../03_humanFacesWebBrowser.py
 
 cd ..
 
-python 03_humanFacesWebBrowser
+python 03_humanFacesWebBrowser.py
 ```
 ##### web application URL :
 
